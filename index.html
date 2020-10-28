@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Data Catalog</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script type="application/ld+json" id="datacatalog">
+      {
+        "@context": "https://schema.org/",
+        "@type": "DataCatalog",
+        "@id": "http://vangoghworldwide.org/data/datacatalog",
+        "name": "Data Catalog of Van Gogh Worldwide",
+        "description": "Data Catalog listing all datasets used in Van Gogh Worldwide project.",
+        "url": "https://github.com/vangoghworldwide/datacatalog",
+        "creator": {
+          "name": "Van Gogh Worldwide",
+          "url": "http://vangoghworldwide.org"
+        },
+        "keywords": [
+          "Vincent van Gogh",
+          "VanGoghWorldwide"
+        ],
+        "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+        "datasets": [
+          {
+            "@type" : "Dataset",
+            "@id" : "https://vangoghworldwide.org/data/dataset/delafaille",
+            "url" : "http://github.com/vangoghworldwide/delafaille",
+            "name": "de la Faille 1970",
+            "description": "Dataset with the artworks mentioned in de la Faille Catalogue of Vincent van Gogh. Artworks are modelled in Linked Art.",
+            "creator": {
+              "@type": "Organization",
+              "url": "http://www.rkd.nl",
+              "name": "RKD – Nederlands Instituut voor Kunstgeschiedenis"
+            },
+            "citation":  {
+              "@id": "https://rkd.nl/nl/explore/library/104442",
+              "@type" : "Article",
+              "name": "The works of Vincent van Gogh [De la Faille, 1970]"
+            },
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "distributions": [
+              {
+                "@type": "DataDownload",
+                "encodingFormat": "application/n-triples",
+                "contentUrl": "https://github.com/vangoghworldwide/delafaille/raw/master/data.nt"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="text/javascript" src="datacatalog.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
