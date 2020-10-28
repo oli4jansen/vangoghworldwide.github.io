@@ -18,7 +18,7 @@ window.onload = function(event) {
     var list = document.createElement('ul');
     list.setAttribute('class', 'datasets');
 
-    dataCatalog.datasets.forEach(function (dataset) {
+    dataCatalog.dataset.forEach(function (dataset) {
       var li = document.createElement('li');
       li.setAttribute('class', 'dataset');
       var name = document.createElement('h3');
@@ -31,9 +31,9 @@ window.onload = function(event) {
       li.appendChild(url);
 
       var distributionList = document.createElement('div');
-      distributionList.setAttribute('class', 'distributions');
+      distributionList.setAttribute('class', 'distribution');
 
-      dataset.distributions.forEach(function (distribution) {
+      dataset.distribution.forEach(function (distribution) {
         var a = document.createElement('a');
         a.textContent = distribution.encodingFormat;
         a.setAttribute('href', distribution.contentUrl);
