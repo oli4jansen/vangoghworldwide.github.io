@@ -31,7 +31,7 @@ window.onload = function(event) {
       li.appendChild(url);
 
       var distributionList = document.createElement('div');
-      distributionList.setAttribute('class', 'distribution');
+      distributionList.setAttribute('class', 'distributions');
 
       dataset.distribution.forEach(function (distribution) {
         var a = document.createElement('a');
